@@ -8,8 +8,8 @@ arch="${arch:-`uname -m`}"
 dotver="${ver:-`uname -r`}"
 # if `uname -r` isn't current snap, use second $ver
 ver="${ver:-`uname -r | tr -d "."`}"
-#ver=62
-mirror="${mirror:-https://ftp4.usa.openbsd.org/pub/OpenBSD/snapshots}"
+#ver="${ver:-64}"
+mirror="${mirror:-https://cdn.openbsd.org/pub/OpenBSD/snapshots}"
 sets="${sets:-{BUILDINFO,bsd.rd,SHA256.sig}}"
 
 yell() { echo "$0: $*" >&2; }
